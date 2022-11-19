@@ -1,5 +1,6 @@
 $main-color: #16a34a;
 $content-color: #E2E8F0;
+$border-color: #FB923C;
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
 
@@ -25,8 +26,8 @@ body, input, button {
 }
 
 .svg {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
 }
 
 #dashboard-logo {
@@ -41,8 +42,6 @@ body, input, button {
 
 #sidebar {
   background-color: $main-color;
-  height: 100vh;
-  width: fit-content;
 }
 
 #sidebar-wrapper {
@@ -70,7 +69,7 @@ body, input, button {
   gap: 20px;
   div {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     color: white;
     img {
       align-self: center;
@@ -137,4 +136,65 @@ body, input, button {
   font-size: 1.15rem;
   padding: 10px 30px;
   border-radius: 15px;
+}
+
+#content {
+  background-color: $content-color;
+  display: flex;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 15px;
+}
+
+.card {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 2% 98%;
+  border-radius: 10px;
+}
+
+.yellow-border {
+  border-radius: 10px 0px 0px 10px;
+  background-color: $border-color;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px;
+
+  .card-btn {
+    align-self: flex-end;
+  }
+
+  p {
+    color: rgba(0, 0, 0, 50%);
+    max-width: 500px;
+  }
+}
+
+.announce-text {
+  p {
+    max-width: 600px;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
 }
