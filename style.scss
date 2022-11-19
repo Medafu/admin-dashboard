@@ -1,5 +1,5 @@
 $main-color: #16a34a;
-$content-color: #cbd5e1;
+$content-color: #E2E8F0;
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
 
@@ -30,8 +30,8 @@ body, input, button {
 }
 
 #dashboard-logo {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   filter: invert(1);
 }
 
@@ -77,4 +77,64 @@ body, input, button {
       filter: invert(1);
     }
   }
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  gap: 15px;
+}
+
+#header-row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#searchbar, #profile-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#search-input {
+  outline: none;
+  border: none;
+  width: 700px;
+  height: 20px;
+  padding: 5px;
+  background-color: $content-color;
+  border-radius: 15px;
+}
+
+#name {
+  font-size: 0.9rem;
+}
+
+#header-row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#greetings {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn {
+  background-color: $main-color;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.15rem;
+  padding: 10px 30px;
+  border-radius: 15px;
 }
