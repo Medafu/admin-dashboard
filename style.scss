@@ -147,7 +147,8 @@ body, input, button {
   background-color: $content-color;
   display: flex;
   padding: 30px 10px;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 .content-column {
@@ -158,7 +159,7 @@ body, input, button {
 
 #cards {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: 1fr;
   grid-auto-rows: 1fr;
   gap: 15px;
@@ -188,7 +189,6 @@ body, input, button {
 
   p {
     color: rgba(0, 0, 0, 50%);
-    max-width: 600px;
   }
 }
 
@@ -197,7 +197,7 @@ body, input, button {
   flex-direction: column;
   gap: 5px;
   p {
-    max-width: 500px;
+    max-width: 600px;
     color: rgba(0, 0, 0, 50%);
     font-size: 0.9rem;
     overflow: hidden;
@@ -234,11 +234,16 @@ body, input, button {
 .trend-profile {
   display: flex;
   gap: 15px;
+
+  div p:nth-child(2) {
+    color: rgba(0, 0, 0, 50%);
+  }
 }
 
 #main-content {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .card, #trending, #announce {
