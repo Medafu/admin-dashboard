@@ -5,200 +5,251 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Dashboard</title>
 </head>
 
 <body>
-  <div id="sidebar">
-    <h1 id="logo">
-      <img src="svg/view-dashboard.svg" alt="dashboard-logo">
-      <h1>Dashboard</h1>
-    </h1>
-    <ul id="options1">
-      <div id="home"></div>
-      <div id="profile"></div>
-      <div id="messages"></div>
-      <div id="history"></div>
-      <div id="tasks"></div>
-      <div id="communities"></div>
-    </ul>
-    <ul id="options2">
-      <div id="settings"></div>
-      <div id="support"></div>
-      <div id="privacy"></div>
-    </ul>
-  </div>
-  <div id="header">
-    <div id="header-row1">
-      <div id="searchbar">
-        <img src="svg/search.svg" alt="search">
-        <input type="text">
-      </div>
-      <div id="profile-btn">
-        <img src="svg/notification.svg" alt="notification-icon">
-        <img class="small" src="icons/pic1.png" alt="icon1">
-        <h2>Morgan Oakley</h2>
-      </div>
-    </div>
-    <div id="header-row2">
-      <div id="greetings">
-        <img class="normal" src="icons/pic1.png" alt="icon1">
-      </div>
-      <div id="header-buttons">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
-      </div>
-    </div>
-  </div>
-  <div id="content">
-    <div id="content-column1">
-      <div id="card-wrapper">
-        <h2>Your Projects</h2>
-        <div id="cards">
-          <div class="card">
-            <div>
-              <h3>Super Cool Project</h3>
-              <p></p>
-            </div>
-            <div>
-              <img src="svg/favourite-add.svg" alt="favourite-add">
-              <img src="svg/watched.svg" alt="watched">
-              <img src="svg/share.svg" alt="share">
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Less Cool Project</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate
-                enim nulla.</p>
-            </div>
-            <div>
-              <img src="svg/favourite-add.svg" alt="favourite-add">
-              <img src="svg/watched.svg" alt="watched">
-              <img src="svg/share.svg" alt="share">
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Impossible App</h3>
-              <p>Sem et tortor consequat id porta nibh venenatis. Lacinia quis vel eros donec ac.
-                Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Diam maecenas sed
-                enim ut sem viverra. Amet risus nullam eget felis eget nunc lobortis mattis aliquam.</p>
-            </div>
-            <div>
-              <img src="svg/favourite-add.svg" alt="favourite-add">
-              <img src="svg/watched.svg" alt="watched">
-              <img src="svg/share.svg" alt="share">
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Easy Peasy App</h3>
-              <p>Iaculis nunc sed augue lacus viverra vitae congue. Mauris pharetra
-                et ultrices neque ornare aenean euismod elementum. Eget lorem dolor
-                sed viverra. Pharetra sit amet aliquam id diam maecenas ultricies.
-                Aliquet risus feugiat in ante metus dictum at tempor.</p>
-            </div>
-            <div>
-              <img src="svg/favourite-add.svg" alt="favourite-add">
-              <img src="svg/watched.svg" alt="watched">
-              <img src="svg/share.svg" alt="share">
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Ad Blocker</h3>
-              <p>In cursus turpis massa tincidunt dui ut ornare. Elit ullamcorper
-                dignissim cras tincidunt lobortis feugiat. Imperdiet dui accumsan sit
-                amet nulla facilisi morbi. Egestas congue quisque egestas diam
-                in arcu cursus euismod. Neque convallis a cras semper.</p>
-            </div>
-            <div>
-              <img src="svg/favourite-add.svg" alt="favourite-add">
-              <img src="svg/watched.svg" alt="watched">
-              <img src="svg/share.svg" alt="share">
-            </div>
-          </div>
-          <div class="card">
-            <div>
-              <h3>Money Maker</h3>
-              <p>Amet luctus venenatis lectus magna fringilla urna porttitor. Sit amet aliquam id diam maecenas
-                ultricies mi eget. Augue ut lectus arcu bibendum at varius vel pharetra vel. Auctor augue mauris augue
-                neque gravida in fermentum. Rhoncus urna neque viverra justo nec ultrices dui sapien.</p>
-            </div>
-            <div>
-              <img src="svg/favourite-add.svg" alt="favourite-add">
-              <img src="svg/watched.svg" alt="watched">
-              <img src="svg/share.svg" alt="share">
-            </div>
-          </div>
+  <div id="wrapper">
+    <div id="sidebar">
+      <div id="sidebar-wrapper">
+        <div id="logo">
+          <img id="dashboard-logo" src="svg/dashboard.svg" alt="dashboard-logo">
+          <h1>Dashboard</h1>
         </div>
+        <ul class="options">
+          <div id="home">
+            <img class="svg" src="svg/home.svg" alt="history">
+            <h3>Home</h3>
+          </div>
+          <div id="profile">
+            <img class="svg" src="svg/profile.svg" alt="profile">
+            <h3>Profile</h3>
+          </div>
+          <div id="messages">
+            <img class="svg" src="svg/messages.svg" alt="messages">
+            <h3>Messages</h3>
+          </div>
+          <div id="history">
+            <img class="svg" src="svg/history.svg" alt="history">
+            <h3>History</h3>
+          </div>
+          <div id="tasks">
+            <img class="svg" src="svg/tasks.svg" alt="tasks">
+            <h3>Tasks</h3>
+          </div>
+          <div id="communities">
+            <img class="svg" src="svg/communities.svg" alt="communities">
+            <h3>Communities</h3>
+          </div>
+        </ul>
+        <ul class="options">
+          <div id="settings">
+            <img class="svg" src="svg/settings.svg" alt="settings">
+            <h3>Settings</h3>
+          </div>
+          <div id="support">
+            <img class="svg" src="svg/support.svg" alt="support">
+            <h3>Support</h3>
+          </div>
+          <div id="privacy">
+            <img class="svg" src="svg/privacy.svg" alt="privacy">
+            <h3>Privacy</h3>
+          </div>
+        </ul>
       </div>
     </div>
-    <div id="content-column2">
-      <div>
-        <h2>Announcements</h2>
-        <div>
-          <h3>Site Maintenance</h3>
-          <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Porta non
-            pulvinar neque laoreet suspendisse interdum consectetur libero id. Proin gravida hendrerit lectus a.
-            Aliquam id diam maecenas ultricies. Quis hendrerit dolor magna eget. Elit ullamcorper dignissim cras
-            tincidunt lobortis feugiat vivamus. Ut venenatis tellus in metus vulputate eu scelerisque. Adipiscing
-            vitae proin sagittis nisl. Feugiat pretium nibh ipsum consequat nisl. Bibendum at varius vel pharetra
-            vel turpis nunc.</p>
-          <span class="line"></span>
-          <h3>Community Share Day</h3>
-          <p>Nibh sit amet commodo nulla facilisi nullam. Dapibus ultrices in iaculis nunc sed augue.
-            Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Id ornare arcu odio ut sem nulla.
-            Pulvinar mattis nunc sed blandit libero. Id consectetur purus ut faucibus pulvinar elementum.
-            Mauris a diam maecenas sed enim ut sem viverra. Ac turpis egestas maecenas pharetra convallis posuere morbi
-            leo urna. Congue eu consequat ac felis donec et. Molestie at elementum eu facilisis sed odio morbi quis
-            commodo. Sed risus pretium quam vulputate dignissim suspendisse. Et malesuada fames ac turpis egestas sed
-            tempus. Dui nunc mattis enim ut tellus. Sociis natoque penatibus et magnis.</p>
-          <span class="line"></span>
-          <h3>Updated Privacy Policy</h3>
-          <p>Quis blandit turpis cursus in hac habitasse. Eu turpis egestas pretium aenean pharetra
-            magna ac. Tempor orci eu lobortis elementum nibh tellus. Eu non diam phasellus vestibulum
-            lorem sed risus ultricies. Consectetur libero id faucibus nisl tincidunt eget nullam non.
-            Ultricies lacus sed turpis tincidunt id aliquet. In ante metus dictum at tempor commodo ullamcorper
-            a. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Ut enim blandit volutpat maecenas
-            volutpat blandit. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Et malesuada fames ac
-            turpis egestas. Augue ut lectus arcu bibendum. Sapien et ligula ullamcorper malesuada proin libero nunc.
-            Aenean sed adipiscing diam donec adipiscing. Placerat orci nulla pellentesque dignissim enim sit
-            amet venenatis. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.</p>
-        </div>
-      </div>
-      <div>
-        <h2>Trending</h2>
-        <div>
-          <div class="trend-profile1">
-            <img class="small" src="icons/pic2.png" alt="icon2">
-            <div>
-              <p>@tegan</p>
-              <p>World Peace Builder</p>
-            </div>
+    <div id="main-content">
+      <div id="header">
+        <div id="header-row1">
+          <div id="searchbar">
+            <img class="svg" src="svg/search.svg" alt="search">
+            <input type="text">
           </div>
-          <div class="trend-profile2">
+          <div id="profile-btn">
+            <img class="svg" src="svg/notification.svg" alt="notification-icon">
             <img class="small" src="icons/pic1.png" alt="icon1">
+            <h2 id="name">Morgan Oakley</h2>
+          </div>
+        </div>
+        <div id="header-row2">
+          <div id="greetings">
+            <img class="normal" src="icons/pic1.png" alt="icon1">
             <div>
-              <p>@morgan</p>
-              <p>Super Cool Project</p>
+              <h5>Hi there,</h5>
+              <h2>Morgan Oakley (@morgan)</h2>
             </div>
           </div>
-          <div class="trend-profile3">
-            <img class="small" src="icons/pic3.png" alt="icon3">
-            <div>
-              <p>@kendall</p>
-              <p>Life Changing App</p>
+          <div id="header-buttons">
+            <button class="btn">New</button>
+            <button class="btn">Upload</button>
+            <button class="btn">Share</button>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="content-column">
+          <h2>Your Projects</h2>
+          <div id="cards">
+            <div class="card">
+              <div class="yellow-border"></div>
+              <div>
+                <h3>Super Cool Project</h3>
+                <p>Pharetra sit amet aliquam id diam maecenas ultricies.
+                  Aliquet risus feugiat in ante metus dictum at tempor.</p>
+              </div>
+              <div class="card-btn">
+                <img class="svg" src="svg/favourite-add.svg" alt="favourite-add">
+                <img class="svg" src="svg/watched.svg" alt="watched">
+                <img class="svg" src="svg/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="card">
+              <div class="yellow-border"></div>
+              <div>
+                <h3>Less Cool Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Sit amet mattis vulputate
+                  enim nulla.</p>
+              </div>
+              <div class="card-btn">
+                <img class="svg" src="svg/favourite-add.svg" alt="favourite-add">
+                <img class="svg" src="svg/watched.svg" alt="watched">
+                <img class="svg" src="svg/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="card">
+              <div class="yellow-border"></div>
+              <div>
+                <h3>Impossible App</h3>
+                <p>Sem et tortor consequat id porta nibh venenatis. Lacinia quis vel eros donec ac.
+                  Eget est lorem ipsum dolor sit amet consectetur adipiscing elit. Diam maecenas sed
+                  enim ut sem viverra. Amet risus nullam eget felis eget nunc lobortis mattis aliquam.</p>
+              </div>
+              <div class="card-btn">
+                <img class="svg" src="svg/favourite-add.svg" alt="favourite-add">
+                <img class="svg" src="svg/watched.svg" alt="watched">
+                <img class="svg" src="svg/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="card">
+              <div class="yellow-border"></div>
+              <div>
+                <h3>Easy Peasy App</h3>
+                <p>Iaculis nunc sed augue lacus viverra vitae congue. Mauris pharetra
+                  et ultrices neque ornare aenean euismod elementum. Eget lorem dolor
+                  sed viverra. Pharetra sit amet aliquam id diam maecenas ultricies.
+                  Aliquet risus feugiat in ante metus dictum at tempor.</p>
+              </div>
+              <div class="card-btn">
+                <img class="svg" src="svg/favourite-add.svg" alt="favourite-add">
+                <img class="svg" src="svg/watched.svg" alt="watched">
+                <img class="svg" src="svg/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="card">
+              <div class="yellow-border"></div>
+              <div>
+                <h3>Ad Blocker</h3>
+                <p>In cursus turpis massa tincidunt dui ut ornare. Elit ullamcorper
+                  dignissim cras tincidunt lobortis feugiat. Imperdiet dui accumsan sit
+                  amet nulla facilisi morbi. Egestas congue quisque egestas diam
+                  in arcu cursus euismod. Neque convallis a cras semper.</p>
+              </div>
+              <div class="card-btn">
+                <img class="svg" src="svg/favourite-add.svg" alt="favourite-add">
+                <img class="svg" src="svg/watched.svg" alt="watched">
+                <img class="svg" src="svg/share.svg" alt="share">
+              </div>
+            </div>
+            <div class="card">
+              <div class="yellow-border"></div>
+              <div>
+                <h3>Money Maker</h3>
+                <p>Amet luctus venenatis lectus magna fringilla urna porttitor. Sit amet aliquam id diam maecenas
+                  ultricies mi eget. Augue ut lectus arcu bibendum at varius vel pharetra vel. Auctor augue mauris augue
+                  neque gravida in fermentum. Rhoncus urna neque viverra justo nec ultrices dui sapien.</p>
+              </div>
+              <div class="card-btn">
+                <img class="svg" src="svg/favourite-add.svg" alt="favourite-add">
+                <img class="svg" src="svg/watched.svg" alt="watched">
+                <img class="svg" src="svg/share.svg" alt="share">
+              </div>
             </div>
           </div>
-          <div class="trend-profile4">
-            <img class="small" src="icons/pic4.png" alt="icon4">
+        </div>
+        <div class="content-column">
+          <div id="announce-wrapper">
+            <h2>Announcements</h2>
+            <div id="announce">
+              <div class="announce-text">
+                <h3>Site Maintenance</h3>
+                <p>Libero id faucibus nisl tincidunt eget nullam non nisi. Porta non
+                  pulvinar neque laoreet suspendisse interdum consectetur libero id. Proin gravida hendrerit lectus a.
+                  Aliquam id diam maecenas ultricies. Quis hendrerit dolor magna eget. Elit ullamcorper dignissim cras
+                  tincidunt lobortis feugiat vivamus. Ut venenatis tellus in metus vulputate eu scelerisque. Adipiscing
+                  vitae proin sagittis nisl. Feugiat pretium nibh ipsum consequat nisl. Bibendum at varius vel pharetra
+                  vel turpis nunc.</p>
+              </div>
+              <span class="line"></span>
+              <div class="announce-text">
+                <h3>Community Share Day</h3>
+                <p>Nibh sit amet commodo nulla facilisi nullam. Dapibus ultrices in iaculis nunc sed augue.
+                  Suspendisse faucibus interdum posuere lorem ipsum dolor sit. Id ornare arcu odio ut sem nulla.
+                  Pulvinar mattis nunc sed blandit libero. Id consectetur purus ut faucibus pulvinar elementum.
+                  Mauris a diam maecenas sed enim ut sem viverra. Ac turpis egestas maecenas pharetra convallis posuere
+                  morbi
+                  leo urna. Congue eu consequat ac felis donec et. Molestie at elementum eu facilisis sed odio morbi quis
+                  commodo. Sed risus pretium quam vulputate dignissim suspendisse. Et malesuada fames ac turpis egestas
+                  sed
+                  tempus. Dui nunc mattis enim ut tellus. Sociis natoque penatibus et magnis.</p>
+              </div>
+              <span class="line"></span>
+              <div class="announce-text">
+                <h3>Updated Privacy Policy</h3>
+                <p>Quis blandit turpis cursus in hac habitasse. Eu turpis egestas pretium aenean pharetra
+                  magna ac. Tempor orci eu lobortis elementum nibh tellus. Eu non diam phasellus vestibulum
+                  lorem sed risus ultricies. Consectetur libero id faucibus nisl tincidunt eget nullam non.
+                  Ultricies lacus sed turpis tincidunt id aliquet. In ante metus dictum at tempor commodo ullamcorper
+                  a. Nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit. Ut enim blandit volutpat maecenas
+                  volutpat blandit. Porttitor leo a diam sollicitudin tempor id eu nisl nunc. Et malesuada fames ac
+                  turpis egestas. Augue ut lectus arcu bibendum. Sapien et ligula ullamcorper malesuada proin libero nunc.
+                  Aenean sed adipiscing diam donec adipiscing. Placerat orci nulla pellentesque dignissim enim sit
+                  amet venenatis. Nascetur ridiculus mus mauris vitae ultricies leo integer malesuada.</p>
+              </div>
+            </div>
+          </div>
+          <div id="trending-wrapper">
+            <h2>Trending</h2>
             <div>
-              <p>@alex</p>
-              <p>No Traffic Maker</p>
+              <div class="trend-profile">
+                <img class="small" src="icons/pic2.png" alt="icon2">
+                <div>
+                  <p>@tegan</p>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="trend-profile">
+                <img class="small" src="icons/pic1.png" alt="icon1">
+                <div>
+                  <p>@morgan</p>
+                  <p>Super Cool Project</p>
+                </div>
+              </div>
+              <div class="trend-profile">
+                <img class="small" src="icons/pic3.png" alt="icon3">
+                <div>
+                  <p>@kendall</p>
+                  <p>Life Changing App</p>
+                </div>
+              </div>
+              <div class="trend-profile">
+                <img class="small" src="icons/pic4.png" alt="icon4">
+                <div>
+                  <p>@alex</p>
+                  <p>No Traffic Maker</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
